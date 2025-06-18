@@ -2,10 +2,12 @@ package com.nisum.group5.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 @Entity
 public class UserAddress {
 
+    @Id
     @Column(name = "addressID")
     private Integer addressId;
 

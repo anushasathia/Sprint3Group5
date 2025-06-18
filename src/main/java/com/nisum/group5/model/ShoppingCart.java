@@ -2,6 +2,7 @@ package com.nisum.group5.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 import java.util.Date;
 
@@ -9,6 +10,7 @@ import java.util.Date;
 public class ShoppingCart {
 
 
+    @Id
     @Column(name = "cartTotal")
     private double cartTotal;
 

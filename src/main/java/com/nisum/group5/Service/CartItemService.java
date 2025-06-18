@@ -16,7 +16,7 @@ public class CartItemService {
 
 
     public CartItem getCartItems(Integer cartId){
-        return (CartItem) cartItemRepository.findByCartId(cartId);
+        return (CartItem) cartItemRepository.findByCartItemId(cartId);
     }
 
     public void addItemToCart(CartItem cartItem){
@@ -24,7 +24,7 @@ public class CartItemService {
     }
 
     public void updateItemQuantity(Integer cartId ,Integer cartItemId, Integer quantity){
-        cartItemRepository.findByCartId(cartId).stream().filter(cartItem -> cartItem.getCartItemId().equals(cartItemId))
+        cartItemRepository.findByCartItemId(cartId).stream().filter(cartItem -> cartItem.getCartItemId().equals(cartItemId))
                 .findFirst().ifPresent(cartItem -> { cartItem.setQuantity(quantity);
                 cartItemRepository.save(cartItem);}
                 );
@@ -32,7 +32,7 @@ public class CartItemService {
     }
 
     public void removeItemByCardItemId(Integer cartItemId) {
-        cartItemRepository.deleteByCartId(cartItemId);
+        cartItemRepository.deleteByCartItemId(cartItemId);
     }
 
     public void clearCart(){
