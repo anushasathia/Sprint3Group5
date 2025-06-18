@@ -1,0 +1,17 @@
+:root {
+  --primary: #2874f0;
+  --secondary: #fff;
+  --accent: #ff3f6c;
+  --bg: #f1f3f6;
+  --border: #e0e0e0;
+  --radius: 8px;
+  --shadow: 0 2px 12px rgba(40,116,240,0.06);
+  --font: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  background: var(--bg);
+  color: #222;
+}
