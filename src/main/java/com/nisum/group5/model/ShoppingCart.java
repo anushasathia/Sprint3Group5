@@ -8,11 +8,6 @@ import java.util.Date;
 @Entity
 public class ShoppingCart {
 
-    @Column(name = "cartID")
-    private Integer cartID;
-
-    @Column(name = "userId")
-    private Integer userId;
 
     @Column(name = "cartTotal")
     private double cartTotal;
@@ -23,21 +18,6 @@ public class ShoppingCart {
     @Column(name = "lastUpdatedDate")
     private Date lastUpdatedDate;
 
-    public Integer getCartID() {
-        return cartID;
-    }
-
-    public void setCartID(Integer cartID) {
-        this.cartID = cartID;
-    }
-
-    public Integer getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Integer userId) {
-        this.userId = userId;
-    }
 
     public double getCartTotal() {
         return cartTotal;

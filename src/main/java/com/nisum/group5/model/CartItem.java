@@ -12,9 +12,6 @@ public class CartItem {
     @Column(name = "CartItemID")
     private Integer cartItemId;
 
-    @Column(name = "CartID")
-    private Integer cartId;
-
     @Column(name = "ProductID")
     private Integer productId;
 
@@ -38,13 +35,6 @@ public class CartItem {
         this.cartItemId = cartItemId;
     }
 
-    public Integer getCartId() {
-        return cartId;
-    }
-
-    public void setCartId(Integer cartId) {
-        this.cartId = cartId;
-    }
 
     public Integer getProductId() {
         return productId;
