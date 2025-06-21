@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import welcome from "./components/welcome"
 import AddToCart from "./components/AddToCart";
 import Cart from "./components/Cart";
 import Checkout from "./components/Checkout";
