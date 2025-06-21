@@ -15,7 +15,7 @@ function AddToCart({ products, cart, setCart }) {
 
   const addToCart = (product) => {
     const productId = product.id;
-    const size = selectedSizes[productId] || 'M'; // Default to 'M' if not selected
+    const size = selectedSizes[productId] || 'Select Size'; // Default to 'M' if not selected
     const quantity = quantities[productId] || 1;
 
     const existingItemIndex = cart.findIndex(

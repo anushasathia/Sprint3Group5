@@ -84,8 +84,12 @@ body {
 
 /* ============ ADD TO CART COMPONENT ============ */
 .product-page {
-  display: grid;
+  display: flex;
+  flex-direction: row-reverse
   gap: 2rem;
+  padding: 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .product-card {
