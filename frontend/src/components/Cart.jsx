@@ -127,7 +127,7 @@ function Cart({ cart, setCart }) {
          <div className="cart-summary">
            <div className="cart-total">
              <span className="total-label">Total Cart Subtotal:</span>
-             <span className="total-amount">₹{calculateTotal()}</span>
+             <span className="total-amount">${calculateTotal()}</span>
            </div>
 
            <div className="cart-actions">
