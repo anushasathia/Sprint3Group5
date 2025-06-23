@@ -9,39 +9,41 @@ import java.util.Date;
 @Entity
 public class ShoppingCart {
 
-
     @Id
-    @Column(name = "cartTotal")
-    private double cartTotal;
+    private Integer productId;
+    private String name;
+    private double price;
+    private String url;
 
-    @Column(name = "createdDate")
-    private Date createdDate;
-
-    @Column(name = "lastUpdatedDate")
-    private Date lastUpdatedDate;
-
-
-    public double getCartTotal() {
-        return cartTotal;
+    public Integer getProductId() {
+        return productId;
     }
 
-    public void setCartTotal(double cartTotal) {
-        this.cartTotal = cartTotal;
+    public void setProductId(Integer productId) {
+        this.productId = productId;
     }
 
-    public Date getCreatedDate() {
-        return createdDate;
+    public String getName() {
+        return name;
     }
 
-    public void setCreatedDate(Date createdDate) {
-        this.createdDate = createdDate;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Date getLastUpdatedDate() {
-        return lastUpdatedDate;
+    public double getPrice() {
+        return price;
     }
 
-    public void setLastUpdatedDate(Date lastUpdatedDate) {
-        this.lastUpdatedDate = lastUpdatedDate;
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }
