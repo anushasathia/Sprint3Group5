@@ -8,13 +8,6 @@ const Welcome = ({ onStartShopping }) => {
         <a href="#" className="nav-link">About</a>
       </nav>
 
-      <div className="geometric-background">
-        <div className="shape shape-1"></div>
-        <div className="shape shape-2"></div>
-        <div className="shape shape-3"></div>
-        <div className="shape shape-4"></div>
-      </div>
-
       <div className="content">
         <h1 className="main-title">Welcome to Our Store</h1>
         <p className="subtitle">Discover amazing products at great prices</p>
