@@ -32,6 +32,7 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
+  position: relative;
 }
 
 .nav {
@@ -54,7 +55,6 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   opacity: 0.8;
 }
 
-/* Centered content */
 .content {
   position: absolute;
   top: 50%;
@@ -67,7 +67,6 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   z-index: 10;
 }
 
-/* Text styles */
 .main-title {
   font-size: clamp(3rem, 8vw, 6rem);
   font-weight: 700;
@@ -84,7 +83,6 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 300;
 }
 
-/* Button styles */
 .start-button {
   background: transparent;
   border: 2px solid white;
@@ -107,8 +105,6 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
 }
 
-
-/* Animation keyframes */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -136,7 +132,6 @@ font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   animation-delay: 0.8s;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .content {
     text-align: center;
